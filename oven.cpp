@@ -299,8 +299,8 @@ static void menuSelect(int in)
 					bowl1.push_back(bowl2[0]);
 					bowl2.pop_front();
 				}
-				if ((2 == bowl2.size() && 6 == bowl1.size() + bowl2.size())
-					|| (4 == bowl2.size() && 6 == bowl1.size() + bowl2.size()))
+				if ((2 != bowl2.size() && 6 == bowl1.size() + bowl2.size())
+					|| (4 != bowl2.size() && 6 == bowl1.size() + bowl2.size()))
 				{ badCombo = true; }
 			}
 			cout << "INGS HAVE BEEN COMBINED INTO BOWL 1\n" << endl;
